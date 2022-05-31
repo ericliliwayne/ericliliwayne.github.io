@@ -1,6 +1,8 @@
 body{
     box-sizing: border-box;
     margin: 0;
+    /* display: block;
+    flex-wrap: wrap; */
 }
 h1{
     color: darkcyan;
@@ -172,17 +174,17 @@ h1{
   }
   
   .circles2 li:nth-child(6) {
-    left: 65.5%;
+    left: 82.5%;
     width: 110px;
     height: 110px;
-    animation-delay: 3s;
+    animation-delay: 9.5s;
   }
   
   .circles2 li:nth-child(7) {
     left: 45%;
     width: 150px;
     height: 150px;
-    animation-delay: 7s;
+    animation-delay: 4.5s;
   }
   
   .circles2 li:nth-child(5) {
@@ -227,3 +229,112 @@ h1{
       /* 產生圓角 */
     }
   }
+
+nav{
+  display: flex;
+  width: 90%;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  margin: 10px auto;
+}
+.divleft{
+  flex-basis:40% ;
+  flex-direction: column;
+}
+.divright{
+  flex-basis:40% ;
+  flex-direction: column;
+}
+.header{
+  width: 100%;
+  height: 150px;
+  justify-content: center;
+  align-content: center;
+  background-color: lightcoral;
+}
+.introduction{
+  width: 100%;
+  height: 50px;
+  float: left;
+  justify-content: center;
+  align-content: center;
+  background-color: lightgreen;
+  margin: 10px auto;
+}
+.experience{
+  width: 100%;
+  height: 50px;
+  float: left;
+  justify-content: center;
+  align-content: center;
+  background-color: lightcyan;
+  margin: 10px auto;
+}
+.frontend{
+  width: 100%;
+  height: 50px;
+  float: right;
+  justify-content: center;
+  align-content: center;
+  background-color: lightgray;
+  margin: 10px auto;
+}
+.forphp{
+  width: 100%;
+  height: 50px;
+  float: right;
+  justify-content: center;
+  align-content: center;
+  background-color: lightseagreen;
+  margin: 10px auto;
+}
+.forsql{
+  width: 100%;
+  height: 50px;
+  float: right;
+  justify-content: center;
+  align-content: center;
+  background-color: lightgoldenrodyellow;
+  margin: 10px auto;
+}
+.webortfolio{
+  width: 100%;
+  height: 50px;
+  float: right;
+  justify-content: center;
+  align-content: center;
+  background-color: lightsteelblue;
+  margin: 10px auto;
+}
+.psportfolio{
+  width: 100%;
+  height: 50px;
+  float: left;
+  justify-content: center;
+  align-content: center;
+  background-color: lightpink;
+  margin: 10px auto;
+}
+.aiportfolio{
+  width: 100%;
+  height: 50px;
+  float: left;
+  justify-content: center;
+  align-content: center;
+  background-color: lightsalmon;
+  margin: 10px auto;
+}
+.centerpic{
+  flex-basis: 10%;
+  height: 300px;
+  background-color: blue;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  
+}
+.centerpic img{
+  margin: auto;
+}
