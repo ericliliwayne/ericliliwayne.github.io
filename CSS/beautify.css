@@ -7,6 +7,7 @@ body{
 h1{
     color: darkcyan;
     text-align: center;
+    font-size: 50px;
 }
 .wrap {
     background-color: lightblue;
@@ -251,7 +252,8 @@ nav{
   height: 150px;
   justify-content: center;
   align-content: center;
-  background-color: lightcoral;
+  /* background-color: lightcoral; */
+  text-align: center;
 }
 .introduction{
   width: 100%;
