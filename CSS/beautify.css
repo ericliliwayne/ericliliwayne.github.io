@@ -242,10 +242,12 @@ nav{
 .divleft{
   flex-basis:40% ;
   flex-direction: column;
+  margin-left: 100px;
 }
 .divright{
   flex-basis:40% ;
   flex-direction: column;
+  margin-right: 100px;
 }
 .header{
   width: 100%;
@@ -256,87 +258,118 @@ nav{
   text-align: center;
 }
 .introduction{
-  width: 100%;
+  width: 50%;
   height: 50px;
   float: left;
-  justify-content: center;
-  align-content: center;
+  font-size: 30px;
+  text-align: center;
+  line-height: 170%;
   background-color: lightgreen;
-  margin: 10px auto;
+  margin: 50px auto;
+  transform:rotate(10deg);
+  border-radius: 30% 30%;
 }
 .experience{
-  width: 100%;
+  width: 50%;
   height: 50px;
   float: left;
-  justify-content: center;
-  align-content: center;
+  font-size: 30px;
+  text-align: center;
+  line-height: 170%;
   background-color: lightcyan;
-  margin: 10px auto;
+  margin: 50px auto;
+  transform:rotate(10deg);
+  border-radius: 30% 30%;
 }
 .frontend{
-  width: 100%;
+  width: 50%;
   height: 50px;
   float: right;
-  justify-content: center;
-  align-content: center;
+  font-size: 30px;
+  text-align: center;
+  line-height: 170%;
   background-color: lightgray;
-  margin: 10px auto;
+  margin: 50px auto;
+  transform:rotate(-10deg);
+  border-radius: 30% 30%;
 }
 .forphp{
-  width: 100%;
+  width: 50%;
   height: 50px;
   float: right;
-  justify-content: center;
-  align-content: center;
+  font-size: 30px;
+  text-align: center;
+  line-height: 170%;
   background-color: lightseagreen;
-  margin: 10px auto;
+  margin: 50px auto;
+  transform:rotate(-10deg);
+  border-radius: 30% 30%;
 }
 .forsql{
-  width: 100%;
+  width: 50%;
   height: 50px;
   float: right;
-  justify-content: center;
-  align-content: center;
+  font-size: 30px;
+  text-align: center;
+  line-height: 170%;
   background-color: lightgoldenrodyellow;
-  margin: 10px auto;
+  margin: 50px auto;
+  transform:rotate(-10deg);
+  border-radius: 30% 30%;
 }
 .webortfolio{
-  width: 100%;
+  width: 50%;
   height: 50px;
   float: right;
-  justify-content: center;
-  align-content: center;
+  font-size: 30px;
+  text-align: center;
+  line-height: 170%;
   background-color: lightsteelblue;
-  margin: 10px auto;
+  margin: 50px auto;
+  transform:rotate(-10deg);
+  border-radius: 30% 30%;
 }
 .psportfolio{
-  width: 100%;
+  width: 50%;
   height: 50px;
   float: left;
-  justify-content: center;
-  align-content: center;
+  font-size: 30px;
+  text-align: center;
+  line-height: 170%;
   background-color: lightpink;
-  margin: 10px auto;
+  margin: 50px auto;
+  transform:rotate(10deg);
+  border-radius: 30% 30%;
 }
 .aiportfolio{
-  width: 100%;
+  width: 50%;
   height: 50px;
   float: left;
-  justify-content: center;
-  align-content: center;
+  font-size: 30px;
+  text-align: center;
+  line-height: 170%;
   background-color: lightsalmon;
-  margin: 10px auto;
+  margin: 50px auto;
+  transform:rotate(10deg);
+  border-radius: 30% 30%;
 }
 .centerpic{
   flex-basis: 10%;
   height: 300px;
-  background-color: blue;
-  margin: auto;
+  /* background-color: blue; */
+  margin: -10px auto;
   display: flex;
   justify-content: center;
   align-content: center;
-  
 }
 .centerpic img{
   margin: auto;
+}
+.frame{
+  display: flex;
+  justify-content: center;
+}
+iframe{
+  width: 98vw;
+  height: 45vh;
 }
