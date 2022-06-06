@@ -365,6 +365,20 @@ nav{
 .centerpic img{
   margin: auto;
 }
+.introduction:hover,.experience:hover,.frontend:hover,.forphp:hover,.forsql:hover,.webortfolio:hover,.psportfolio:hover,.aiportfolio:hover{
+  background-color: black;
+  color: white;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+a:visited{
+  color:RED;
+}
+a:hover{
+  color: white;
+}
 .frame{
   display: flex;
   justify-content: center;
