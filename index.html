@@ -1,62 +1,398 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>我的首頁</title>
-    <link rel="stylesheet" href="./CSS/beautify.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>個人網頁</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
-    <div class="wrap">
-        <ul class="circles">
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
-        <ul class="circles2">
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
+  <!-- 圖片輪播 -->
+
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner bg-secondary">
+      <div class="carousel-item active">
+        <img src="./imgs/P_20160716_105434~2.jpg" class="d-block w-75 mx-auto" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="./imgs/P_20161103_115048_SRES.jpg" class="d-block w-75 mx-auto" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="./imgs/P_20180914_174148_SRES.jpg" class="d-block w-75 mx-auto" alt="...">
+      </div>
     </div>
-    <div class="header">
-        <h1>我的首頁</h1>
-        <img src="./resource/title.png" alt="善待生活，熱愛一切，經常開懷大笑。" width="30%" class="tipic">
+    <button class="carousel-control-prev" type="button" data-target="#carouselExampleIndicators" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-target="#carouselExampleIndicators" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </button>
+  </div>
+
+  <!-- 標提欄 -->
+
+  <nav class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top">
+    <a class="navbar-brand" href="#">Wayne's web</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Top <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#intro">個人介紹</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#skill">技能</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#portfolio">作品集</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">連絡我</a>
+        </li>
+
+      </ul>
     </div>
-    <nav>
-        <section class="divleft">
-            <div class="introduction"><a href="./introduction.html" target="frame">自我介紹</a></div>
-            <div class="experience"><a href="./experience.html" target="frame">學習經歷</a></div>
-            <div class="frontend"><a href="./frontend.html" target="frame">前端相關</a></div>
-            <div class="forphp"><a href="./forphp.html" target="frame">php相關</a></div>
-        </section>
-        <div class="centerpic">
-            <a href="./index.html" target="_top"><img src="./resource/個人照.jpg" alt="個人照" height="90%" style="border-radius: 50% 50%;"></a>
+  </nav>
+
+  <!-- 個人資料 -->
+  <div class="container mt-5">
+    <h2 id="intro">個人介紹</h2>
+    <div class="overflow-auto">
+      <div class="accordion" id="accordionExample">
+        <div class="card">
+          <div class="card-header" id="headingOne">
+            <h2 class="mb-0">
+              <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse"
+                data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                學歷/經歷
+              </button>
+            </h2>
+          </div>
+
+          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+            <div class="card-body">
+              <table class="table table-striped">
+                <thead class="thead-dark">
+                  <tr>
+                    <th scope="col">生日</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1993/10/07</td>
+                  </tr>
+                </tbody>
+                <thead class="thead-dark">
+                  <tr>
+                    <th scope="col">兵役</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>役畢</td>
+                  </tr>
+                </tbody>
+
+                <thead class="thead-dark">
+                  <tr>
+                    <th scope="col" colspan="3">學歷</th>
+                  </tr>
+                </thead>
+
+                <tbody>
+                  <tr>
+                    <td colspan="3">國立中和高中</td>
+                  </tr>
+                  <tr>
+                    <td>真理大學資訊管理學系畢業</td>
+                  </tr>
+                </tbody>
+                <thead class="thead-dark">
+                  <tr>
+                    <th scope="col" colspan="3">經歷</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td colspan="3">阿克斯科技有限公司-營銷管理部特助(2017~2021)</td>
+                  </tr>
+                </tbody>
+              </table>
+
+
+            </div>
+          </div>
         </div>
-        <section class="divright">
-            <div class="forsql"><a href="./forphp.html" target="frame">資料庫相關</a></div>
-            <div class="webortfolio"><a href="./webortfolio.html" target="frame">前後端作品集</a></div>
-            <div class="aiportfolio"><a href="./aipsportfolio.html" target="frame">Ai/PS作品集</a></div>
-            <div class="psportfolio"><a href="./contact.html" target="frame">聯絡方式</a></div>
-        </section>
-    </nav>
-    <div class="frame">
-        <iframe src="./main.html" frameborder="0" name="frame"></iframe>
+        <div class="card">
+          <div class="card-header" id="headingTwo">
+            <h2 class="mb-0">
+              <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
+                data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                自我簡介
+              </button>
+            </h2>
+          </div>
+          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+            <div class="card-body">
+              <div class="container">
+                <div class="row align-items-center">
+                  <div class="col-sm-3">
+                    <img src="./imgs/71QL7CL.jpg" class="img-thumbnail rounded mx-auto d-block" width='150' height='150'
+                      alt="...">
+                  </div>
+                  <div class="col-sm-9">
+                    您好，我是董韋逸，從小時候就對軟體硬體有興趣，喜歡東摸摸西摸摸，所以大學時選擇有興趣的資訊管理學系就讀，畢業當完兵後在一家公司任職特助，工作業務主要是做行政庶務，偶爾修修圖、上下架網頁及做業務性質的事，離開工作崗位後決定來報名參加職訓局的php課程，加強自己的能力，希望能藉此做本科系相關的工作。
+                  </div>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingThree">
+            <h2 class="mb-0">
+              <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
+                data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                個人特質
+              </button>
+            </h2>
+          </div>
+          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+            <div class="card-body">
+              <ul>
+                <li>專心:對一件事情能專心的做完一個一個階段。</li>
+                <li>投入:寫著寫著有時會沒發覺時間已經過這麼久了。</li>
+                <li>細心:寫完一個階段的程式碼會先測試有無問題，沒有再繼續下一階段。</li>
+                <li>不怕困難:不論是coding還是人生中遇到的問題都勇於面對。</li>
+                <li>尋找資源:想找某資料時利用GOOGLE(W3School)、朋友、同學、同事、老師等等方式來取得。</li>
+                <li>解決問題:同尋找資源，若自己無法解決就去找GOOGLE(stackoverflow之類的blog)或請教朋友、同學、同事、老師等等。</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
+
+  <!-- SKILL -->
+  <div class="container mt-5">
+    <h2 id="skill">技能</h2>
+    <button type="button" class="btn btn-primary btn-lg mt-5 tog">文書處理方面
+      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+        class="bi bi-arrow-down-square-fill" viewBox="0 0 20 20">
+        <path
+          d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm6.5 4.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5a.5.5 0 0 1 1 0z" />
+      </svg>
+    </button><br>
+    <div class="paperwork">
+      <img src="./icons/word.png" class="img-thumbnail mt-3" width='100' height='100' alt="...">
+      <img src="./icons/PowerPoint.png" class="img-thumbnail mt-3" width='100' height='100' alt="...">
+      <img src="./icons/EXCEL.png" class="img-thumbnail mt-3" width='100' height='100' alt="...">
+      <img src="./icons/Access.png" class="img-thumbnail mt-3" width='100' height='100' alt="...">
+      <img src="./icons/project.png" class="img-thumbnail mt-3" width='100' height='100' alt="...">
+      <img src="./icons/Visio.png" class="img-thumbnail mt-3" width='100' height='100' alt="...">
+    </div>
+    <button type="button" class="btn btn-success btn-lg mt-5 art">美術設計方面
+      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+        class="bi bi-arrow-down-square-fill" viewBox="0 0 20 20">
+        <path
+          d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm6.5 4.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5a.5.5 0 0 1 1 0z" />
+      </svg>
+    </button><br>
+    <div class="pic">
+      <img src="./icons/photoshop.png" class="img-thumbnail mt-3" width='100' height='100' alt="...">
+      <img src="./icons/Illustrator.png" class="img-thumbnail mt-3" width='100' height='100' alt="...">
+    </div>
+    <button type="button" class="btn btn-danger btn-lg mt-5 web">網頁設計方面
+      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+        class="bi bi-arrow-down-square-fill" viewBox="0 0 20 20">
+        <path
+          d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm6.5 4.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5a.5.5 0 0 1 1 0z" />
+      </svg>
+    </button><br>
+    <div class="website">
+      <img src="./icons/html5.png" class="img-thumbnail mt-3" width='100' height='100' alt="...">
+      <img src="./icons/css3.png" class="img-thumbnail mt-3" width='100' height='100' alt="...">
+      <img src="./icons/javascript.png" class="img-thumbnail mt-3" width='100' height='100' alt="...">
+      <img src="./icons/jquery.png" class="img-thumbnail mt-3" width='100' height='100' alt="...">
+      <img src="./icons/php.png" class="img-thumbnail mt-3" width='100' height='100' alt="...">
+      <img src="./icons/mysql.png" class="img-thumbnail mt-3" width='100' height='100' alt="...">
+    </div>
+    <button type="button" class="btn btn-dark btn-lg mt-5 work">框架運用方面
+      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+        class="bi bi-arrow-down-square-fill" viewBox="0 0 20 20">
+        <path
+          d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm6.5 4.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5a.5.5 0 0 1 1 0z" />
+      </svg>
+    </button><br>
+    <div class="work2">
+      <img src="./icons/bootstrap.png" class="img-thumbnail mt-3" width='100' height='100' alt="...">
+      <img src="./icons/laravel.png" class="img-thumbnail mt-3" width='100' height='100' alt="...">
+    </div>
+  </div>
+
+  <!--作品集-->
+  <div class="container mt-5">
+    <h2 id="portfolio">作品集</h2>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4 col-sm-6">
+        <div class="card m-2 bg-light shadow p-3 mb-5 bg-white rounded" style="width: 20rem;">
+          <img src="./imgs/messageImage_1659453814910.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">乘法表及畫星星(php)</h5>
+            <p class="card-text">用post和function的方式來繪製出九九乘法表(1*1~99*99)以及圖形(3*3~101*101)。</p>
+            <a href="http://220.128.133.15/s1110202/nineninestars/" class="btn btn-success" target="_blank">前往網站</a>
+            <a href="https://github.com/ericliliwayne/nineninestars-work" class="btn btn-info" target="_blank">看原始碼</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-6">
+        <div class="card m-2 bg-light shadow p-3 mb-5 bg-white rounded" style="width: 20rem;">
+          <img src="./imgs/messageImage_1659454825853.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">速食快餐店線上點餐系統</h5>
+            <p class="card-text">以JS來做。</p>
+            <a href="https://ericliliwayne.github.io/HTML-CSS-JS-buyONLINE/buyonline.html" class="btn btn-success"
+              target="_blank">前往網站</a>
+            <a href="https://github.com/ericliliwayne/HTML-CSS-JS-buyONLINE" class="btn btn-info"
+              target="_blank">看原始碼</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-6">
+        <div class="card m-2 bg-light shadow p-3 mb-5 bg-white rounded" style="width: 20rem;">
+          <img src="./imgs/messageImage_1659453889574.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">萬年曆</h5>
+            <p class="card-text">以php製作，搭配GET來做萬年曆年月分的查詢。</p>
+            <a href="http://220.128.133.15/s1110202/-PerpetualCalendar-pra/" class="btn btn-success"
+              target="_blank">前往網站</a>
+            <a href="https://github.com/ericliliwayne/-PerpetualCalendar-pra" class="btn btn-info"
+              target="_blank">看原始碼</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-6">
+        <div class="card m-2 bg-light shadow p-3 mb-5 bg-white rounded" style="width: 20rem;">
+          <img src="./imgs/messageImage_1659453846885.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">BMI計算網</h5>
+            <p class="card-text">以GET方式用php製作一個BMI計算系統。</p>
+            <a href="http://220.128.133.15/s1110202/BMIcalculate/" class="btn btn-success" target="_blank">前往網站</a>
+            <a href="https://github.com/ericliliwayne/BMI-calculate-work" class="btn btn-info" target="_blank">看原始碼</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-6">
+        <div class="card m-2 bg-light shadow p-3 mb-5 bg-white rounded" style="width: 20rem;">
+          <img src="./imgs/messageImage_1659453994763.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">線上投票系統</h5>
+            <p class="card-text">將HTML、CSS、Jquery、php和SQL技術來製作投票系統網站。</p>
+            <a href="http://220.128.133.15/s1110202/vote/" class="btn btn-success" target="_blank">前往網站</a>
+            <a href="https://github.com/ericliliwayne/vote---work" class="btn btn-info" target="_blank">看原始碼</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-6">
+        <div class="card m-2 bg-light shadow p-3 mb-5 bg-white rounded" style="width: 20rem;">
+          <img src="./imgs/1660148523764.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">年度犬貓統計資料(api)</h5>
+            <p class="card-text">運用api來連結網路上的資料，並以bootstrap來做美化。</p>
+            <a href="http://220.128.133.15/s1110202/apihw/api.html" class="btn btn-success" target="_blank">前往網站</a>
+            <a href="https://github.com/ericliliwayne/API-cat-dog" class="btn btn-info" target="_blank">看原始碼</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 聯絡方式 -->
+  <div id="contact"></div>
+  <div class="container mt-5">
+    <h2>連絡我</h2>
+    <form>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="formGroupExampleInput">姓名:</label>
+          <input type="text" class="form-control" id="formGroupExampleInput">
+        </div>
+        <div class="form-group col-md-6">
+          <label for="exampleInputEmail1">e-mail:</label>
+          <input type="text" class="form-control" id="exampleInputEmail1">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlTextarea1">輸入訊息:</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+      </div>
+      <div style="display: flex;">
+        <button type="submit" class="btn btn-outline-success" style="margin: auto;width: 50%; ">送 出</button>
+      </div>
+    </form>
+  </div>
+
+  <!-- footer -->
+  <div
+    style="width: 100%;height:3vh;background:black;margin-top:50px;display: flex;justify-content: center;align-items: center;">
+
+  </div>
+
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+    integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous">
+  </script>
+  <script>
+    $(".paperwork").hide();
+    $(".pic").hide();
+    $(".website").hide();
+    $(".work2").hide();
+    $(".tog").click(function () {
+      $(".paperwork").toggle();
+    })
+    $(".art").click(function () {
+      $(".pic").toggle();
+    })
+    $(".web").click(function () {
+      $(".website").toggle();
+    })
+    $(".work").click(function () {
+      $(".work2").toggle();
+    })
+  </script>
 </body>
+
 </html>
