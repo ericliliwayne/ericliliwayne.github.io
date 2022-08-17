@@ -42,6 +42,21 @@
         /* IE6-9 fallback on horizontal gradient */
 
     }
+    .pos:hover{
+        /* position: absolute; */
+        top: -40px; 
+    }
+    .skill{
+        margin: 5px;
+        box-shadow: 2px 2px 5px black ;
+        background-color: transparent;
+    }
+    .skill:hover{
+        width: 150px;
+        background-color: #eee;
+        cursor:progress;
+        transform: rotate(23.5deg);
+    }
     </style>
 </head>
 
@@ -242,12 +257,12 @@
             </svg>
         </button><br>
         <div class="paperwork">
-            <img src="./icons/word.png" class="img-thumbnail mt-3" width='100' height='100' alt="..." title="word">
-            <img src="./icons/PowerPoint.png" class="img-thumbnail mt-3" width='100' height='100' alt="..." title="powerpoint">
-            <img src="./icons/EXCEL.png" class="img-thumbnail mt-3" width='100' height='100' alt="..." title="excel">
-            <img src="./icons/Access.png" class="img-thumbnail mt-3" width='100' height='100' alt="..." title="access">
-            <img src="./icons/project.png" class="img-thumbnail mt-3" width='100' height='100' alt="..." title="project">
-            <img src="./icons/Visio.png" class="img-thumbnail mt-3" width='100' height='100' alt="..." title="visio">
+            <img src="./icons/word.png" class="img-thumbnail mt-3 skill" width='100' height='100' alt="..." title="word">
+            <img src="./icons/PowerPoint.png" class="img-thumbnail mt-3 skill" width='100' height='100' alt="..." title="powerpoint">
+            <img src="./icons/EXCEL.png" class="img-thumbnail mt-3 skill" width='100' height='100' alt="..." title="excel">
+            <img src="./icons/Access.png" class="img-thumbnail mt-3 skill" width='100' height='100' alt="..." title="access">
+            <img src="./icons/project.png" class="img-thumbnail mt-3 skill" width='100' height='100' alt="..." title="project">
+            <img src="./icons/Visio.png" class="img-thumbnail mt-3 skill" width='100' height='100' alt="..." title="visio">
         </div>
         <button type="button" class="btn btn-success btn-lg mt-5 art">美術設計方面
             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
@@ -257,8 +272,8 @@
             </svg>
         </button><br>
         <div class="pic">
-            <img src="./icons/photoshop.png" class="img-thumbnail mt-3" width='100' height='100' alt="..." title="photoshop">
-            <img src="./icons/Illustrator.png" class="img-thumbnail mt-3" width='100' height='100' alt="..." title="illustrator">
+            <img src="./icons/photoshop.png" class="img-thumbnail mt-3 skill" width='100' height='100' alt="..." title="photoshop">
+            <img src="./icons/Illustrator.png" class="img-thumbnail mt-3 skill" width='100' height='100' alt="..." title="illustrator">
         </div>
         <button type="button" class="btn btn-danger btn-lg mt-5 web">網頁設計方面
             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
@@ -268,12 +283,12 @@
             </svg>
         </button><br>
         <div class="website">
-            <img src="./icons/html5.png" class="img-thumbnail mt-3" width='100' height='100' alt="..." title="html5">
-            <img src="./icons/css3.png" class="img-thumbnail mt-3" width='100' height='100' alt="..." title="css">
-            <img src="./icons/javascript.png" class="img-thumbnail mt-3" width='100' height='100' alt="..." title="javascript">
-            <img src="./icons/jquery.png" class="img-thumbnail mt-3" width='100' height='100' alt="..." title="jQuery">
-            <img src="./icons/php.png" class="img-thumbnail mt-3" width='100' height='100' alt="..." title="php">
-            <img src="./icons/mysql.png" class="img-thumbnail mt-3" width='100' height='100' alt="..." title="MySQL">
+            <img src="./icons/html5.png" class="img-thumbnail mt-3 skill" width='100' height='100' alt="..." title="html5">
+            <img src="./icons/css3.png" class="img-thumbnail mt-3 skill" width='100' height='100' alt="..." title="css">
+            <img src="./icons/javascript.png" class="img-thumbnail mt-3 skill" width='100' height='100' alt="..." title="javascript">
+            <img src="./icons/jquery.png" class="img-thumbnail mt-3 skill" width='100' height='100' alt="..." title="jQuery">
+            <img src="./icons/php.png" class="img-thumbnail mt-3 skill" width='100' height='100' alt="..." title="php">
+            <img src="./icons/mysql.png" class="img-thumbnail mt-3 skill" width='100' height='100' alt="..." title="MySQL">
         </div>
         <button type="button" class="btn btn-dark btn-lg mt-5 work">框架運用方面
             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
@@ -283,8 +298,8 @@
             </svg>
         </button><br>
         <div class="work2">
-            <img src="./icons/bootstrap.png" class="img-thumbnail mt-3" width='100' height='100' alt="..." title="bootstrap">
-            <img src="./icons/laravel.png" class="img-thumbnail mt-3" width='100' height='100' alt="..." title="laravel">
+            <img src="./icons/bootstrap.png" class="img-thumbnail mt-3 skill" width='100' height='100' alt="..." title="bootstrap">
+            <!-- <img src="./icons/laravel.png" class="img-thumbnail mt-3 skill" width='100' height='100' alt="..." title="laravel"> -->
         </div>
     </div>
 
@@ -294,11 +309,11 @@
     </div>
     <div class="container">
         <div class="row">
-        <div class="col-lg-4 col-sm-6">
+        <div class="col-lg-4 col-sm-6 pos">
                 <div class="card m-2 bg-light shadow p-3 mb-5 bg-white rounded" style="width: 20rem;height:25rem">
                     <img src="./imgs/messageImage_1660750314069.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">網頁丙級技術士題組一</h5>
+                        <h5 class="card-title">網頁丙級術科題組一</h5>
                         <p class="card-text">運用flex來做網頁排版，並以iframe的方式來做頁面切換。</p>
                         <a href="https://ericliliwayne.github.io/midtermexam-20220505/index.html" class="btn btn-success"
                             target="_blank">前往網站</a>
@@ -307,7 +322,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-sm-6">
+            <div class="col-lg-4 col-sm-6 pos">
                 <div class="card m-2 bg-light shadow p-3 mb-5 bg-white rounded" style="width: 20rem;height:25rem">
                     <img src="./imgs/messageImage_1659454825853.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
@@ -320,7 +335,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-sm-6">
+            <div class="col-lg-4 col-sm-6 pos">
                 <div class="card m-2 bg-light shadow p-3 mb-5 bg-white rounded" style="width: 20rem;height:25rem">
                     <img src="./imgs/messageImage_1659453814910.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
@@ -333,7 +348,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-sm-6">
+            <div class="col-lg-4 col-sm-6 pos">
                 <div class="card m-2 bg-light shadow p-3 mb-5 bg-white rounded" style="width: 20rem;height:25rem">
                     <img src="./imgs/messageImage_1659453889574.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
@@ -346,7 +361,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-sm-6">
+            <div class="col-lg-4 col-sm-6 pos">
                 <div class="card m-2 bg-light shadow p-3 mb-5 bg-white rounded" style="width: 20rem;height:25rem">
                     <img src="./imgs/messageImage_1659453846885.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
@@ -359,7 +374,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-sm-6">
+            <div class="col-lg-4 col-sm-6 pos">
                 <div class="card m-2 bg-light shadow p-3 mb-5 bg-white rounded" style="width: 20rem;height:25rem">
                     <img src="./imgs/messageImage_1659453994763.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
@@ -371,7 +386,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-sm-6">
+            <div class="col-lg-4 col-sm-6 pos">
                 <div class="card m-2 bg-light shadow p-3 mb-5 bg-white rounded" style="width: 20rem;height:25rem">
                     <img src="./imgs/1660148523764.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
