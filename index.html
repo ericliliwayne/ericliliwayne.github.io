@@ -12,73 +12,22 @@
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
-    body{
-            /*背景漸層動畫效果*/
-            margin: 0;
-            max-width: 100vw;
-            max-height: 100vh;
-            background-color: whitesmoke ;
-            background-image: 
-            radial-gradient(closest-side, rgb(235,105,78,0.5), rgb(235,105,78,0)),
-            radial-gradient(closest-side, rgb(243,11,164,0.5), rgb(243,11,164,0)),
-            radial-gradient(closest-side, rgb(111,192,100,0.5), rgb(248,192,147,0));
-            background-size: 
-            90vmax -5vmax,
-            -30vmax -55vmax,
-            -105vmax -110vmax;
-            background-position: 
-            0vmax 60vmax,
-            -20vmax -20vmax,
-            -30vmax -100vmax;
-            /* background-repeat: no-repeat; */
-            animation: 10s movement linear infinite;
+    body {
+            background-color: aliceblue;
+            animation-name: example;
+            animation-duration: 16s;
+            animation-iteration-count:infinite
         }
-        @keyframes movement{
-            0%, 100%{
-                background-size: 
-            90vmax -5vmax,
-            -30vmax -55vmax,
-            -105vmax -110vmax;
-            background-position: 
-            0vmax 60vmax,
-            -20vmax -20vmax,
-            -30vmax -100vmax;
-            }
-
-            25%{
-            background-size: 
-            80vmax 10vmax,
-            -20vmax -65vmax,
-            -75vmax -120vmax;
-            background-position: 
-            -40vmax 50vmax,
-            -10vmax -55vmax,
-            0vmax 5vmax;
-            }
-
-            50%{
-            background-size: 
-            75vmax 18vmax,
-            -20vmax -65vmax,
-            -30vmax -100vmax;
-            background-position: 
-            -50vmax -10vmax,
-            -30vmax 15vmax,
-            -40vmax 2vmax;
-            }
-
-            75%{
-            background-size: 
-            40vmax 60vmax,
-            -20vmax -45vmax,
-            -55vmax -30vmax;
-            background-position: 
-            20vmax 40vmax,
-            -10vmax 35vmax,
-            -20vmax -25vmax;
-            }
+        @keyframes example {
+            0%   {background-color:rgb(255, 0, 0, 0.1);}
+            14%  {background-color:rgb(255, 128, 0, 0.1);}
+            28%  {background-color:rgb(255, 255, 0, 0.1);}
+            42%  {background-color:rgb(0, 255, 0, 0.1);}
+            56%  {background-color:rgb(0, 0, 255, 0.1);}
+            70%  {background-color:rgb(111, 0, 255, 0.1);}
+            84%  {background-color:rgb(127, 0, 127, 0.1);}
+            100% {background-color:rgb(255, 0, 0, 0.1);}
         }
-    
     .carousel-control-next {
         width: 12.5%;
         /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ff0000+0,ff8000+16,ffff00+34,00ff00+50,0000ff+66,6f00ff+84,7f007f+100 */
@@ -92,7 +41,7 @@
         /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
         filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0000', endColorstr='#7f007f', GradientType=1);
         /* IE6-9 fallback on horizontal gradient */
-    }
+    } 
 
     .carousel-control-prev {
         width: 12.5%;
@@ -158,7 +107,6 @@
     </div>
     
     <!-- 標提欄 -->
-    
     <nav class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top">
         <a class="navbar-brand" href="#">Wayne's web</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -458,7 +406,7 @@
                     <img src="./imgs/1660761166460.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">年度犬貓統計資料(api)</h5>
-                        <p class="card-text">運用api來連結網路上的資料，並以bootstrap來做美化。</p>
+                        <p class="card-text">運用串接網路api來連結網路上的資料，並以bootstrap來做美化。</p>
                         <a href="http://220.128.133.15/s1110202/apihw/api.html" class="btn btn-success"
                             target="_blank">前往網站</a>
                         <a href="https://github.com/ericliliwayne/API-cat-dog" class="btn btn-info"
